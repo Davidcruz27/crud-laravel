@@ -69,7 +69,7 @@ class TaskController extends Controller
             'description' => 'required'
         ]));
         $task -> update($request->all());
-        return redirect()->route('tasks.index')->with('success', 'Nueva tarea acctualizada Exitosamente');
+        return redirect()->route('tasks.index')->with('success', 'Nueva tarea actualizada Exitosamente');
     }
 
     /**
