@@ -42,20 +42,12 @@
                 </td>
                 <td>
 
-                    @if($task -> status == 'Pendiente')
-                    <span style="background-color: red; font-weight: bold; border-radius: 10px; padding:10px; display: flex; justify-content: center; align-items: center">
+                    
+                    <span style="background-color: red; font-weight: bold; border-radius: 10px; padding:10px; display: inline-block; justify-content: center; align-items: center">
                         {{$task -> status}}
                     </span>
-                    @elseif($task -> status == 'En progreso')
-                    <span style="background-color: #B8A95C; font-weight: bold; border-radius: 10px; padding:10px; display: flex; justify-content: center; align-items: center">
-                        {{$task -> status}}
-                    </span>
-
-                    @elseif($task -> status == 'Completo')
-                    <span style="background-color: green; font-weight: bold; border-radius: 10px; padding:10px; display: flex; justify-content: center; align-items: center">
-                        {{$task -> status}}
-                    </span>
-                    @endif
+                    
+                    
 
 
                 </td>
